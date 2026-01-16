@@ -3000,7 +3000,7 @@ function renderParentsFaq(){
     </div>
   `).join("");
 
-  // optional: nur eine Antwort gleichzeitig offen
+  
   const closeAll = () => {
     box.querySelectorAll(".faqA").forEach(a => a.classList.add("hidden"));
     box.querySelectorAll(".faqQ").forEach(q => q.setAttribute("aria-expanded","false"));
