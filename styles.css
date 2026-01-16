@@ -122,7 +122,7 @@ body{
   letter-spacing: 0.2px;
   box-shadow: 0 10px 18px rgba(0,0,0,0.12);
   transition: transform .08s ease, opacity .15s ease;
-  touch-action: manipulation; /* macht Click/Tap zuverlässiger */
+  touch-action: manipulation; 
 }
 
 .btn:active{ transform: translateY(1px) scale(0.99); }
