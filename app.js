@@ -3144,9 +3144,25 @@ document.getElementById("btnLernspiele").addEventListener("click", () => {
   if (!frame.src) frame.src = frame.dataset.src;
 });
 
+
+
+
+document.getElementById("btnAuswahlLernspiel").addEventListener("click", () => {
+
+  const frame = document.getElementById("lernspieleFrame");
+
+  frame.src = "https://learningapps.org/watch?v=pihbo00mk26";
+
+  frame.style.display = "block";
+
+});
+
 document.getElementById("btnLernspieleExit").addEventListener("click", () => {
+
   showScreen("#screen-menu");
 
- 
-  document.getElementById("lernspieleFrame").src = "";
+  const frame = document.getElementById("lernspieleFrame");
+  frame.src = "";
+  frame.style.display = "none";
+
 });
