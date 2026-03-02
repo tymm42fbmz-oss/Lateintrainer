@@ -173,6 +173,7 @@ body{
     "substantive"
     "satz"
     "arena"
+    "lernspiele"
     "mistakes"
     "stats"
     "parents"
@@ -185,6 +186,7 @@ body{
 .menuGrid [data-mode="substantive"]{ grid-area: substantive; }
 .menuGrid [data-mode="satzanalyse"]{ grid-area: satz; }
 .menuGrid .arenaBtn{ grid-area: arena; }
+.menuGrid .lernspieleBtn{ grid-area: lernspiele; }
 
 #btnMistakes{ grid-area: mistakes; }
 #btnStats{ grid-area: stats; }
@@ -198,6 +200,7 @@ body{
     grid-template-areas:
       "verben substantive satz"
       ". arena ."
+      ". lernspiele ."
       ". mistakes ."
       ". stats ."
       ". parents ."
