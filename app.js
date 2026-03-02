@@ -3137,31 +3137,28 @@ updateMistakeCount();
 updateArenaHighscoreUI();
 
 
-document.getElementById("btnLernspiele").addEventListener("click", () => {
-  showScreen("#screen-lernspiele");
+const btnLernspiele = document.getElementById("btnLernspiele");
+const btnStart = document.getElementById("btnAuswahlLernspiel");
+const btnExit = document.getElementById("btnLernspieleExit");
+const frame = document.getElementById("lernspieleFrame");
 
+if (btnLernspiele) {
+  btnLernspiele.addEventListener("click", () => {
+    showScreen("#screen-lernspiele");
+  });
+}
 
-});
+if (btnStart) {
+  btnStart.addEventListener("click", () => {
+    frame.src = "https://learningapps.org/watch?v=pihbo00mk26";
+    frame.style.display = "block";
+  });
+}
 
-
-
-
-document.getElementById("btnAuswahlLernspiel").addEventListener("click", () => {
-
-  const frame = document.getElementById("lernspieleFrame");
-
-  frame.src = "https://learningapps.org/watch?v=pihbo00mk26";
-
-  frame.style.display = "block";
-
-});
-
-document.getElementById("btnLernspieleExit").addEventListener("click", () => {
-
-  showScreen("#screen-menu");
-
-  const frame = document.getElementById("lernspieleFrame");
-  frame.src = "";
-  frame.style.display = "none";
-
-});
+if (btnExit) {
+  btnExit.addEventListener("click", () => {
+    showScreen("#screen-menu");
+    frame.src = "";
+    frame.style.display = "none";
+  });
+}
