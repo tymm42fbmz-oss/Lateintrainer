@@ -3135,3 +3135,18 @@ $("#btnArenaExit")?.addEventListener("click", () => showScreen("#screen-menu"));
 updateArenaButton();
 updateMistakeCount();
 updateArenaHighscoreUI();
+
+
+document.getElementById("btnLernspiele").addEventListener("click", () => {
+  showScreen("#screen-lernspiele");
+
+  const frame = document.getElementById("lernspieleFrame");
+  if (!frame.src) frame.src = frame.dataset.src;
+});
+
+document.getElementById("btnLernspieleExit").addEventListener("click", () => {
+  showScreen("#screen-menu");
+
+ 
+  document.getElementById("lernspieleFrame").src = "";
+});
